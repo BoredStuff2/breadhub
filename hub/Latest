@@ -1,5 +1,18 @@
 return {
 	start = function (config)
+		startTime = os.time()
+		if (config.ConsoleBased ~= nil) and (config.ConsoleBased) then
 		
-	end
+		end
+		
+		if (config.StartUpAction ~= nil) then
+			StartUpAction(info = {
+				success = true,
+				message = ("Executed in %s seconds."):format(startTime - os.time()),
+				version = "Latest | 1.0",
+			})
+		end
+	end,
+	
+	version = "Latest | 1.0",
 }
