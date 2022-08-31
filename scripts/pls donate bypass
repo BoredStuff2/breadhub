@@ -46,11 +46,11 @@ end
 
 getOurBooth()
 
-uti:Textbox("Your Booth Text", true, function(t)
+uti:Textbox("Your Booth Text", false, function(t)
     boothtxt = t
 end)
 
-uti:Textbox("Robux Goal", true, function(t)
+uti:Textbox("Robux Goal", false, function(t)
     robuxgoal = t
 end)
 
