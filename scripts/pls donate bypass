@@ -54,7 +54,7 @@ uti:Textbox("Robux Goal", false, function(t)
     robuxgoal = t
 end)
 
-local toggle = uti:Toggle("Auto Donation Goal", false, "Toggle", function(t)
+local toggle = uti:Toggle("Donation Goal (does not work w/ bypass)", false, "Toggle", function(t)
     if (t) then
         local plast = string.gsub(MyBooth.Details.Raised.Text:split(" ")[1], ",", "")
         event:FireServer(boothtxt..'\n<stroke color="rgb(0,0,210)">'..plast..'/'..robuxgoal..'</stroke>', "booth")
