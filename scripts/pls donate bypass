@@ -34,6 +34,7 @@ local robuxgoal = '2k'
 local boothtxt = ''
 local MyBooth
 local boothui = game.Players.LocalPlayer.PlayerGui.MapUIContainer.MapUI.BoothUI
+local autogoal = false
 
 function getOurBooth()
     for i,v in ipairs(boothui:GetChildren()) do
@@ -65,7 +66,6 @@ local toggle = uti:Toggle("Donation Goal (does not work w/ bypass)", false, "Tog
 end)
 
 repeat wait(0.1) until getOurBooth()
-MyBooth = getOurBooth
 
 while wait() do
     local plast = string.gsub(MyBooth.Details.Raised.Text:split(" ")[1], ",", "")
