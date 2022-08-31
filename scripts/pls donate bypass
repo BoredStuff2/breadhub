@@ -48,6 +48,7 @@ getOurBooth()
 
 uti:Textbox("Your Booth Text", false, function(t)
     boothtxt = t
+    event:FireServer(t, "booth")
 end)
 
 uti:Textbox("Robux Goal", false, function(t)
