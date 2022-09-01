@@ -67,6 +67,8 @@ end)
 
 repeat wait(0.1) until getOurBooth()
 
+SolarisLib:Notification("Announcement", "I'm doing a new script that uses VC. (donation = meme on vc) SOON!")
+
 while wait() do
     local plast = string.gsub(MyBooth.Details.Raised.Text:split(" ")[1], ",", "")
     if (autogoal) then
