@@ -25,7 +25,7 @@ own:Button('Copy Discord User Url', function()
 end)
 
 local sec = credi:Section("Bypass")
-sec:Textbox("Text to Bypass", true, function(t)
+sec:Textbox("Text to Bypass (this is a textbox) on right", true, function(t)
     event:FireServer('<!--' .. t .. '-->', "booth")
 end)
 
@@ -47,7 +47,7 @@ end
 
 getOurBooth()
 
-uti:Textbox("Your Booth Text (this is a textbox) on right", false, function(t)
+uti:Textbox("Your Booth Text", false, function(t)
     boothtxt = t
     event:FireServer(t, "booth")
 end)
