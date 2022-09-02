@@ -47,7 +47,7 @@ end
 
 getOurBooth()
 
-uti:Textbox("Your Booth Text", false, function(t)
+uti:Textbox("Your Booth Text (this is a textbox) on right", false, function(t)
     boothtxt = t
     event:FireServer(t, "booth")
 end)
